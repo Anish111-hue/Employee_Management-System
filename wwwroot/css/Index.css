@@ -1,0 +1,41 @@
+﻿.EditButton {
+    background: #4CAF50;
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.EditButton:hover{
+    color: white;
+}
+
+    .DetailsButton {
+        background: #4CAF50;
+        padding: 12px;
+        color: white;
+        border-radius: 10px;
+        width: 100px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+.DetailsButton:hover {
+    color: white;
+}
+
+.DeleteButton {
+    background: #4CAF50;
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.DeleteButton:hover {
+    color: white;
+}
