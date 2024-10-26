@@ -1,0 +1,39 @@
+﻿@model EmployeeManagementSystem.Models.Admin
+
+@{
+    ViewData["Title"] = "Signup";
+}
+@section Styles {
+    <link href="~/css/Signup.css" rel="stylesheet" />
+}
+<script src="~/js/Signup.js" asp-append-version="true"></script>
+<h2 style="font-weight: bold;font-size: xx-large; color: white;">Signup</h1>
+
+<div class="container_box">
+    <form asp-action="Signup">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Userid" class="control-label"></label>
+            <input asp-for="Userid" class="form-control" />
+            <span asp-validation-for="Userid" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="control-label"></label>
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<div>
+    already have account? <a asp-action="Login">Login</a>
+</div>
+
